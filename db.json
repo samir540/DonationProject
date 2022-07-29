@@ -1,0 +1,76 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Charlie & Mause",
+      "price": 7.45,
+      "image": "https://images-us.bookshop.org/ingram/9781452172637.jpg?height=500&v=v2"
+    },
+    {
+      "id": 2,
+      "name": "The Children's Book of Virtues",
+      "price": 7.05,
+      "image": "https://images-us.bookshop.org/ingram/9780684813530.jpg?height=500&v=v2"
+    },
+    {
+      "id": 3,
+      "name": "Maybe Days",
+      "price": 9.35,
+      "image": "https://images-us.bookshop.org/ingram/9781557988027.jpg?height=500&v=v2"
+    },
+    {
+      "id": 4,
+      "name": "Writing Children's Books for Dummies",
+      "price": 5.75,
+      "image": "https://images-us.bookshop.org/ingram/9781119870012.jpg?height=500&v=v2-483c9a14acda62d67a183f00643d80d6"
+    },
+    {
+      "id": 5,
+      "name": "ABCs of D&d",
+      "price": 6.35,
+      "image": "https://images-us.bookshop.org/ingram/9780786966660.jpg?height=500&v=v2"
+    },
+    {
+      "id": 6,
+      "name": "DK Children's Encyclopedia",
+      "price":  10.15,
+      "image": "https://images-us.bookshop.org/ingram/9781465462077.jpg?height=500&v=v2"
+    },
+    {
+      "id": 7,
+      "name": "The Memory Book",
+      "price": 4.45,
+      "image": "https://images-us.bookshop.org/ingram/9781506457819.jpg?height=500&v=v2"
+    },
+    {
+      "id": 8,
+      "name": "The Children's Book of Christmas Stories",
+      "price": 2.55,
+      "image": "https://images-us.bookshop.org/ingram/9781480116030.jpg?height=500&v=v2"
+    },
+    {
+      "id": 9,
+      "name": "How to Be a Children's Book Illustrator",
+      "price": 4.35,
+      "image": "https://images-us.bookshop.org/ingram/9781912843190.jpg?height=500&v=v2"
+    },
+    {
+      "id": 10,
+      "name": "Like the Moon Loves the Sky",
+      "price": 3.65,
+      "image": "https://images-us.bookshop.org/ingram/9781452180199.jpg?height=500&v=v2"
+    },
+    {
+      "id": 11,
+      "name": "ABC Coloring Book",
+      "price": 5.75,
+      "image": "https://images-us.bookshop.org/ingram/9781681277196.jpg?height=500&v=v2"
+    },
+    {
+      "id": 12,
+      "name": "Books Children Love",
+      "price": 6.95,
+      "image": "https://images-us.bookshop.org/ingram/9781581341980.jpg?height=500&v=v2"
+    }
+  ]
+}
