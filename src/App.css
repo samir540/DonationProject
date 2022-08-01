@@ -52,11 +52,7 @@ section {
 .about h1 {
   color: red;
 }
-.elave{
-  width: 400px;
-  height: 400px;
-  background-color: red;
-}
+
 header {
   width: 100%;
   height: 100px;
@@ -81,38 +77,15 @@ header {
   margin-top: 10px;
 }
 
-.header-logo-details {
-  width: 40px;
-  height: 40px;
-  background: none;
-  border: 3px solid var(--help-color);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.header-detail {
-  width: 20px;
-  height: 20px;
-  background: none;
-  border: 3px solid var(--help-color);
-  transform: rotate(45deg);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.header-detail-icon i {
-  transform: rotate(-45deg);
-  color: var(--help-color);
+.header-logo {
+  font-size: 35px;
+  color: green;
 }
 
 .header-heading {
   margin-left: 10px;
   color: var(--text-color);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-top: 5px;
+  font-size: 20px;
 }
 
 .header-menu {
@@ -240,6 +213,29 @@ header {
   border-right: transparent;
 }
 
+.search-button {
+  margin-left: 30px;
+}
+
+.search-button button {
+  width: 150px;
+  height: 70px;
+  background-color: white;
+  color: var(--text-color);
+  border: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.search-button button:hover {
+  background: none;
+  border: 2px solid white;
+  color: white;
+}
+
 .contain {
   width: 100%;
   height: 100vh;
@@ -256,7 +252,7 @@ header {
 .contain-overlay {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
   position: absolute;
   top: 0;
   left: 0;
@@ -376,6 +372,79 @@ header {
   background: white;
   color: var(--main-color);
   border: none;
+}
+
+.contain-onedonate-text {
+  margin-top: 24px;
+  margin-left: 20px;
+}
+
+.contain-onedonate-text i {
+  color: green;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.contain-onedonate-text h4 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 20px;
+}
+
+.contain-onedonate-text span {
+  font-size: 20px;
+  padding-left: 10px;
+  color: green;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+.contain-onedonate-text p {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 24px;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.contain-onedonate-about {
+  width: 500px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.contain-onedonate-image {
+  width: 100%;
+  height: 300px;
+}
+
+.contain-onedonate-image img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.contain-onedonate-button {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+
+.contain-onedonate-button button {
+  width: 80%;
+  height: 50px;
+  background-color: var(--help-color);
+  border: none;
+  color: white;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.contain-onedonate-button button:hover {
+  background-color: rgb(0, 0, 100);
 }
 
 .hero {
@@ -1218,7 +1287,7 @@ header {
 .project-overlay {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
   position: absolute;
   top: 0;
   left: 0;
@@ -1480,6 +1549,8 @@ header {
 .gray-logo-text h3 {
   color: var(--text-color);
   font-family: var(--text-family);
+  font-size: 15px;
+  line-height: 35px;
 }
 
 .gray-logo-heading h1 {
@@ -1762,72 +1833,93 @@ header {
 .onedonate {
   width: 100%;
   height: 100vh;
-  background-image: url("https://images.unsplash.com/photo-1521493959102-bdd6677fdd81?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  position: relative;
-  z-index: -1;
-}
-
-.onedonate-overlay {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(50, 50, 50, 0.8);
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  display: flex;
+  align-items: center;
+  padding-left: 220px;
+}
+
+.onedonate-remove {
+  color: white;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 40px;
+  cursor: pointer;
 }
 
 .onedonate-pay-items {
-  width: 600px;
-  height: 90vh;
+  width: 520px;
+  padding: 20px;
   background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 15px;
-}
-
-.onedonate-heading h1 {
-  color: white;
-  font-size: 40px;
-  font-family: var(--text-family);
-  letter-spacing: 1px;
-  margin-bottom: 30px;
-  position: relative;
-}
-
-.onedonate-heading h1::after {
-  content: "";
-  width: 100px;
-  height: 4px;
-  background-color: #f8a88b;
-  position: absolute;
-  top: 60px;
-  left: 0;
-}
-
-.onedonate-heading p {
-  color: white;
-  font-size: 17px;
-  letter-spacing: 1px;
-  line-height: 24px;
+  margin-left: 20px;
 }
 
 .onedonate-content {
   width: 100%;
-  padding: 100px;
-  display: flex;
+}
+
+.onedonate-text {
+  margin-top: 24px;
+  margin-left: 20px;
+}
+
+.onedonate-text i {
+  color: green;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.onedonate-text h4 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.onedonate-text span {
+  font-size: 20px;
+  padding-left: 10px;
+  color: green;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+.onedonate-text p {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 24px;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.onedonate-about {
+  width: 520px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.onedonate-image {
+  width: 100%;
+  height: 300px;
+}
+
+.onedonate-image img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .onedonate-items {
   width: 100%;
   display: flex;
-  justify-content: space-around;
 }
 
 .onedonate-pay h1 {
@@ -1906,44 +1998,7 @@ header {
   margin-left: 10px;
 }
 
-.onedonate-about h3 {
-  font-family: var(--text-family);
-  color: var(--text-color);
-  letter-spacing: 1px;
-  position: relative;
-}
 
-.onedonate-about h3::after {
-  content: "";
-  width: 100px;
-  height: 4px;
-  background-color: #f8a88b;
-  position: absolute;
-  top: 30px;
-  left: 0;
-}
-
-.onedonate-about h4 {
-  font-family: var(--text-family);
-  color: var(--text-color);
-  letter-spacing: 1px;
-  margin-top: 40px;
-  margin-bottom: 30px;
-}
-
-.onedonate-about p {
-  font-family: var(--text-family);
-  color: var(--text-color);
-  font-size: 14px;
-  letter-spacing: 1px;
-  line-height: 24px;
-}
-
-.onedonate-about img {
-  width: 100%;
-  height: 500px;
-  margin-top: 30px;
-}
 
 .contact {
   width: 100%;
@@ -2069,11 +2124,6 @@ header {
   .header-detail-icon i {
     transform: rotate(-45deg);
     color: var(--help-color);
-  }
-
-  .header-heading {
-    margin-left: 10px;
-    color: white;
   }
 
   .header-menu {
@@ -3436,7 +3486,7 @@ header {
   .project-overlay {
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.4);
     position: absolute;
     top: 0;
     left: 0;
@@ -5352,7 +5402,7 @@ header {
   .project-overlay {
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.4);
     position: absolute;
     top: 0;
     left: 0;

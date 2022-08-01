@@ -85,7 +85,22 @@ footer::after {
     justify-content: space-between;
     z-index: 9;
 }
-
+.footer-icon {
+    display: flex;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  .footer-logo{
+    font-size: 35px;
+    color: green;
+  }
+  
+  .footer-heading {
+    margin-left: 10px;
+    color: white;
+    font-size: 20px;
+    margin-top: 5px;
+  }
 .footer-items h5 {
     color: white;
     font-family: var(--text-family);

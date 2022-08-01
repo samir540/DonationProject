@@ -35,7 +35,7 @@ function Partners() {
                     <img src="https://www.onedrop.org/image/1/512/0/uploads/rich-content/cds_groupe_an_bw_lightback-en-1550002446.png" alt="" />
                   </div>
                   <div className="gray-logo-text">
-                    <h3>Qurucu tərəfdaşımızın sarsılmaz öhdəliyi <br /> və əvəzsiz dəstəyi proqramlarımızın uğurunu <br /> təmin edən və bizi hər gün ruhlandıran şeydir.</h3>
+                    <h3>Qurucu tərəfdaşımızın sarsılmaz öhdəliyi  və əvəzsiz dəstəyi proqramlarımızın uğurunu  təmin edən və bizi hər gün ruhlandıran şeydir.</h3>
                   </div>
                 </div>
               </div>

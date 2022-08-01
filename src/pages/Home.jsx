@@ -1,6 +1,5 @@
 import React from 'react'
 import Footer from '../Companents/Footer/Footer'
-import DonateCause from '../Companents/DonateCause/DonateCause'
 import AOS from "aos"
 import "aos/dist/aos.css";
 import {connect} from "react-redux"
@@ -18,26 +17,25 @@ function Home() {
                         <div className="contain-items">
                             <div className="contain-heading">
                                 <h6>BİZİM XEYİRLİYƏ YANAŞIMIMIZ SADƏDIR</h6>
-                                <h1>Afrikaya Davamlı Layihələrlə Dəstək.</h1>
+                                <h1>Afrikaya Davamlı Layihələrlə <br /> Dəstək.</h1>
                                 <p>Afrika ağır vəziyyətdədir və bir çoxları iqtisadi <br /> mübarizələr səbəbindən ailələrini dolandıra bilmirlər.</p>
                           <button onClick={()=>window.location="/projects"}>Sosyal Layihələr<i className="fa-solid fa-arrow-right"></i></button>
                             </div>
                         </div>
-                        <div className="onedonate-pay-items">
-<div className="onedonate-pay">
-         <h1>İANƏ ET</h1>
-         <p>Siz bu İanə Et tətbiqindən istidafə edərək Afrikadı <br /> uşaqların digər ehtiyaclarının da  qarşılanması  üçün <br /> istifadə edə və ianə-i edə bilərsiniz.</p>
-        <h5>İANƏ MƏBLƏĞİ *</h5> 
-        <input type="text" name="" id="" placeholder='$'/>
-        <h5>Kart Sahibinin Adı *</h5>
-        <input className='cardname' type="text" name="" id="" placeholder='Javid'/><br />
-         <h5>Kart Nömrəsi *</h5>
-         <input className='cardnumber' type="text" name="" id="" placeholder='0000 0000 0000 0000'/><br />
-         <input className='time'  type="text" name="" id="" placeholder='MM/YY'/>
-         <input className='cvv' type="text" name="" id="" placeholder='CVV2'/>
-        <button>ÖDƏ</button>
-       </div>
-</div>
+                        <div className='contain-onedonate-about'>
+  <div className="contain-onedonate-image">
+    <img src="https://ucarecdn.com/61879270-f970-423e-8f53-57c0d8ece6bd/-/resize/940x/-/format/auto/" alt="" />
+  </div>
+  <div className="contain-onedonate-text">
+  <i className="fa-brands fa-pagelines"></i>
+    <span>Həyat Fondu</span>
+  <h4>Həyat Fondu yoxsulluğa son qoymaq üçün hər gün çalışır.</h4>
+  <p>Amma biz sizsiz edə bilmərik. Siz bizə fəlakət zamanı insanların həyatını xilas etmək, ən ucqar ərazilərə təmiz su gətirmək, uşaqları, xüsusilə qızları məktəbə göndərmək və qadınların hüquqlarını müdafiə etməkdə kömək edə bilərsiniz.</p>
+  <div className="contain-onedonate-button">
+  <button>İanə Et</button>
+ </div>
+  </div>
+  </div>
                     </div>
                 </div>
             </div>
@@ -183,7 +181,6 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <DonateCause/>
             <Footer />
             
         </section>

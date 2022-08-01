@@ -2,9 +2,11 @@ import React from 'react'
 import { NavLink,useLocation } from 'react-router-dom'
 import {useEffect,useState} from 'react'
 import Search from '../../pages/Search';
+import Donate from '../../pages/Donate';
 function Header() {
   const {pathname} = useLocation();
-  const [modal,setModal] = useState(false)
+  const [modalSearch,setmodalSearch] = useState(false);
+  const [modalDonate,setmodalDonate] = useState(false);
 useEffect(()=>{
   window.scrollTo(0,0);
 },[pathname])
@@ -13,15 +15,11 @@ useEffect(()=>{
       <div className="container">
         <div className="header-content">
           <NavLink to='/' className="header-icon">
-            <div className="header-logo-details">
-              <div className="header-detail">
-                <div className="header-detail-icon">
-                  <i className="fa-solid fa-caret-up"></i>
-                </div>
-              </div>
+            <div className="header-logo">
+            <i className="fa-brands fa-pagelines"></i>
             </div>
             <div className="header-heading">
-              <h3>Afrika İanə</h3>
+              <h3>Həyat Fondu</h3>
             </div>
           </NavLink>
           <div className="header-menu">
@@ -31,7 +29,7 @@ useEffect(()=>{
               <NavLink className='li' to='/partners'>Tərəfdaşlar</NavLink>
               <NavLink className={`li ${pathname.includes("details")?"active":""}`} to='/shop'>Mağaza</NavLink>
               <NavLink className='li' to='/contact'>Əlaqə</NavLink>
-              <NavLink className='donate' to='/donate' >Ianə et</NavLink>
+              <li onClick={()=>setmodalDonate(true)} className='donate' >Ianə et</li>
               <NavLink className='loginer' to='/login'>Daxil Ol</NavLink>
             </ul>
           </div>
@@ -41,14 +39,17 @@ useEffect(()=>{
             <i className="fa-solid fa-basket-shopping"></i>
             </NavLink>
                   
-                   <i onClick={()=>setModal(true)} className="fa-solid fa-magnifying-glass"></i>   
+                   <i onClick={()=>setmodalSearch(true)} className="fa-solid fa-magnifying-glass"></i>   
                         
             </div>
           </div>
         </div>
       </div>
       {
-        modal && <Search setModal={setModal}/> 
+        modalSearch && <Search setmodalSearch={setmodalSearch}/> 
+      }
+      {
+        modalDonate && <Donate setmodalDonate={setmodalDonate}/>
       }
     </header>
   )

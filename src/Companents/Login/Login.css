@@ -135,7 +135,22 @@ section {
   border-radius: 2px;
   margin: 4px;
   cursor: pointer;
+  position: relative;
 }
+
+.login-box i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: blue;
+  font-size: 10px;
+  display: none;
+}
+
+.login-box i.show {
+  display: block;
+}
+
 
 .login-box-writting span {
   padding-left: 10px;
@@ -177,7 +192,6 @@ section {
   letter-spacing: 4px;
   margin-bottom: 70px;
   padding-left: 5px;
-  padding-top: 10px;
 }
 
 .login-home-link .span {
@@ -194,25 +208,8 @@ section {
 }
 
 .login-logo-details {
-  width: 40px;
-  height: 40px;
-  background: none;
-  border: 1px solid white;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.detail {
-  width: 20px;
-  height: 20px;
-  background: none;
-  border: 1px solid white;
-  transform: rotate(45deg);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-size: 24px;
+  color: green;
 }
 
 .detail-icon {
@@ -225,8 +222,9 @@ section {
   margin-top: 50px;
 }
 
-.login-register-link span:hover {
+.login-register-link a:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .login-register-link p {
@@ -236,9 +234,8 @@ section {
   font-size: 14px;
 }
 
-.login-register-link span {
+.login-register-link a {
   font-family: Arial, Helvetica, sans-serif;
-  cursor: pointer;
   color: blue;
   letter-spacing: 1px;
   font-size: 15px;

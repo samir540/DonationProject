@@ -1,5 +1,5 @@
 import React from 'react'
-import Product from '../Companents/Product/Product';
+import Product from '../Companents/Product/Product'
 import Footer from '../Companents/Footer/Footer';
 import { productsApi } from '../Service/apiService';
 function Shop() {
@@ -7,7 +7,6 @@ function Shop() {
 console.log(products);
   return (
     <section>
-      {isLoading&& <h1>Loading...</h1> }
       <div className="shop-background-image">
       <div className="shop-overlay"></div>
       <div className="container">
@@ -21,11 +20,9 @@ console.log(products);
    <div className="container">
      <div className='products-content'>
        
-       {
-          products.map((a) => 
+       {products&& products.map((a) => 
           <Product  key={a.id} product={a}/>
-          )
-        }
+          )}
        </div>
      </div>
    </div>

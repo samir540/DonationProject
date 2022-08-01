@@ -1,11 +1,20 @@
 import React from 'react'
 import './Footer.css'
+import {NavLink} from 'react-router-dom'    
 function Footer() {
   return (
     <footer>
     <div className="footer-overlay"></div>
                 <div className="container">
                     <div className="footer-content">
+                    <NavLink to='/' className="footer-icon">
+            <div className="footer-logo">
+            <i className="fa-brands fa-pagelines"></i>
+            </div>
+            <div className="footer-heading">
+              <h3>Həyat Fondu</h3>
+            </div>
+          </NavLink>
                         <div className="footer-items">
                             <h5>Xəbər Bülleteni</h5>
                             <input type="text" name="" id="" placeholder='Adınızı daxil edin' /> <br />

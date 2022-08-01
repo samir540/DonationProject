@@ -25,7 +25,6 @@ function App() {
           <Route path='/projects' element={<Projects />} />
           <Route path='/shop' element={<Shop />} />
           <Route path='/contact' element={<Contact />} />
-          <Route path='/donate' element={<Donate />} />
           <Route path='/partners' element={<Partners />} />
           <Route path='/details/:id' element={<DetailsShop/>}/>
           <Route path='/addtobasket' element={<AddtoBasket/>}/>
