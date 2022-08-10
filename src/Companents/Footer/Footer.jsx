@@ -1,6 +1,7 @@
 import React from 'react'
 import './Footer.css'
 import {NavLink} from 'react-router-dom'    
+import {useState} from 'react'
 function Footer() {
   return (
     <footer>
@@ -25,7 +26,7 @@ function Footer() {
                         <div className="footer-contact">
                             <div className="contact-us">
                                 <h5>BİZİMLƏ ƏLAQƏ</h5>
-                                <p>info@onedonatefoundation.org</p>
+                                <p>info@həyatfondu.org</p>
                             </div>
                             <div className="locate-us">
                                 <h5>BIZI TAPIN</h5>
@@ -33,9 +34,9 @@ function Footer() {
                             </div>
                             <div className="follow-us">
                                 <h5>BİZİ İZLƏYİN</h5>
-                                <i className="fa-brands fa-twitter-square"></i>
-                                <i className="fa-brands fa-instagram"></i>
-                                <i className="fa-brands fa-facebook-square"></i>
+                                <a href="https://twitter.com/" target='_blank'><i className="fa-brands fa-twitter-square"></i></a>
+                                <a href="https://www.instagram.com/" target='_blank'><i className="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.facebook.com/" target='_blank'><i className="fa-brands fa-facebook-square"></i></a>
                             </div>
                         </div>
                         <div className="footer-resource">

@@ -1,6 +1,9 @@
 import React from 'react'
 import Footer from '../Companents/Footer/Footer'
+import { servicesApi } from "../Service/apiService";
+import BasePartner from "../Companents/BasePartner/BasePartner";
 function Partners() {
+  const { data: basepartners } = servicesApi.useGetBasePartnersQuery();
   return (
     <section>
       <div className='partners'>
@@ -43,37 +46,21 @@ function Partners() {
           </div>
         </div>
       </div>
-      <div className="major-partners">
-        <div className="container">
-          <div className="major-partners-heading">
-            <h1>ƏSAS PARTNORLARIMIZ</h1>
-          </div>
-          <div className="major-partners-content">
-            <div className="major-partners-box">
-              <img src="https://www.onedrop.org/image/1/435/0/uploads/rich-content/1d-logos-prince-albert-ii-of-monaco-foundation-en-1551291502.png" alt="" />
-            </div>
-            <div className="major-partners-box">
-              <img src="https://www.onedrop.org/image/1/435/0/uploads/rich-content/1d-logos-rb-foundation-en-en-1551473961.png" alt="" />
-            </div>
-            <div className="major-partners-box">
-              <img src="https://www.onedrop.org/image/1/435/0/uploads/rich-content/logo_fundacion-femsa-en-1657143359.png" alt="" />
-            </div>
-            <div className="major-partners-box">
-              <img src="https://www.onedrop.org/image/1/435/0/uploads/rich-content/1d-logos-hilton-en-1551291429.png" alt="" />
-            </div>
-            <div className="major-partners-box">
-              <img src="https://www.onedrop.org/image/1/435/0/uploads/rich-content/1d-logos-coca-cola-en-1551473972.png" alt="" />
-            </div>
-            <div className="major-partners-box">
-              <img src="https://www.onedrop.org/image/1/435/0/uploads/rich-content/gac_en_web-en-1592509773.png" alt="" />
-            </div>
-          </div>
-        </div>
+     <div className="container">
+      <div className="base-partners-heading">
+     <h1>ƏSAS PARTNYOTLAR</h1>
       </div>
+     <div className="base-partners">
+       <div className="base-partners-content">
+       {basepartners &&
+                basepartners.map((a) => <BasePartner key={a.id} partner={a} />)} 
+       </div>
+      </div>
+     </div>
       <div className="brand-partners">
         <div className="container">
           <div className="brand-partners-heading">
-            <h1>BREND PARTNORLARI</h1>
+            <h1>BREND PARTNYORLAR</h1>
           </div>
           <div className="brand-partners-content">
             <div className="brand-partners-box">

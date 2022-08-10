@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink,useLocation } from 'react-router-dom'
 import {useEffect,useState} from 'react'
 import Search from '../../pages/Search';
-import Donate from '../../pages/Donate';
+import CommonDonate from '../../pages/CommonDonate';
 function Header() {
   const {pathname} = useLocation();
   const [modalSearch,setmodalSearch] = useState(false);
@@ -27,9 +27,9 @@ useEffect(()=>{
               <NavLink className='li' to='/about'>Haqqımızda</NavLink>
               <NavLink className='li' to='/projects'>Sosyal Layihələr</NavLink>
               <NavLink className='li' to='/partners'>Tərəfdaşlar</NavLink>
-              <NavLink className={`li ${pathname.includes("details")?"active":""}`} to='/shop'>Mağaza</NavLink>
+              <NavLink className='li' to='/donate'>İanə</NavLink>
               <NavLink className='li' to='/contact'>Əlaqə</NavLink>
-              <li onClick={()=>setmodalDonate(true)} className='donate' >Ianə et</li>
+              <li onClick={()=>setmodalDonate(true)} className='donate' >Ümumi İanə</li>
               <NavLink className='loginer' to='/login'>Daxil Ol</NavLink>
             </ul>
           </div>
@@ -49,7 +49,7 @@ useEffect(()=>{
         modalSearch && <Search setmodalSearch={setmodalSearch}/> 
       }
       {
-        modalDonate && <Donate setmodalDonate={setmodalDonate}/>
+        modalDonate && <CommonDonate setmodalDonate={setmodalDonate}/>
       }
     </header>
   )
