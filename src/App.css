@@ -81,6 +81,10 @@ header {
   margin-top: 10px;
 }
 
+.header-icon-menu{
+  display: none;
+}
+
 .header-logo {
   font-size: 35px;
   color: green;
@@ -166,12 +170,12 @@ header {
   color: var(--help-color);
 }
 
-.header-search-icon {
+.header-icons {
   margin: 15px;
   display: flex;
 }
 
-.header-search-icon i {
+.header-icons i {
   font-size: 20px;
   color: var(--text-color);
   cursor: pointer;
@@ -498,13 +502,63 @@ margin-top: 20px;
 }
 .hero{
   width: 100%;
-  height: 400px;
+  padding: 20px 0;
 }
 .hero-content{
 width: 100%;
 display: flex;
-justify-content: space-around;
+justify-content: space-between;
 flex-wrap: wrap;
+}
+.base{
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-image: url("https://images.unsplash.com/photo-1459369510627-9efbee1e6051?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  filter: grayscale(100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.base-title h1{
+  font-size: 40px;
+  color: white;
+  font-family: var(--text-family);
+  letter-spacing: 2px;
+}
+.base-button{
+display: flex;
+justify-content: center;
+margin-top: 150px;
+}
+.base-button button{
+  width: 150px;
+  height: 50px;
+  background-color: var(--help-color);
+  color: white;
+  font-family: var();
+  font-weight: bold;
+  cursor: pointer;
+border: none;
+transition-duration: 0.5s;
+letter-spacing: 1px;
+}
+.base-button button:hover{
+  background: none;
+  border: 2px solid white;
+}
+.base::after {
+  content: "Bu mağazadan əldə edilən xalis gəlirin 10%-i layihələrimizə gedir.";
+  position: absolute;
+  bottom: 20px;
+  left: 100px;
+  color: white;
+  font-family: CeraGr-bold, Helvetica, sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 .story{
   width: 24%;
@@ -618,6 +672,10 @@ flex-wrap: wrap;
   background: none;
   color: var(--help-color);
 }
+.head{
+  width: 100%;
+  padding: 20px 0;
+}
 .head-content{
   width: 100%;
   display: flex;
@@ -674,6 +732,127 @@ flex-wrap: wrap;
 .donate-project button:hover{
   background-color: orangered;
 }
+.project-details{
+width: 100%;
+padding: 50px 0; 
+background-color: #ebeeee;
+}
+.project-details-items{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.project-details-heading h1{
+text-align: center;
+color: #3e4b59;
+font-family: var(--text-family);
+font-size: 30px;
+margin-bottom: 30px;
+}
+.project-details-heading h3{
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  color: #457389;
+}
+.project-details-item{
+  width: 60%;
+}
+.project-details-image img{
+  width: 100%;
+  margin-bottom: 20px 0;
+}
+.project-details-donate{
+  width: 30%;
+}
+.project-details-content{
+  width: 100%; 
+  padding: 20px 20px;
+  background-color: white;
+  border: 2px solid rgb(220, 220, 220);
+}
+.project-details-content h1{
+  font-size: 30px;
+letter-spacing: 1px;
+margin-bottom: 20px;
+}
+.project-details-content p{
+font-family: var(--text-family);
+line-height: 30px;
+}
+.project-details-amount{
+  width: 400px;
+  height: 150px;
+  background-color: var(--help-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--help-color);
+  cursor: pointer;
+  position: relative; 
+}
+.project-details-amount-overlay{
+  width: 30px;
+  height: 30px;
+  background-color: var(--help-color);
+  position: absolute;
+  bottom: -8px;
+  left: 190px;
+  transform: rotate(45deg);
+}
+.project-details-count-goal{
+  display: block;
+  color: white;
+  text-align: center;
+}
+.project-details-count-percent{
+  width: 300px;
+  height: 30px;
+  background-color: white;
+  border-radius: 20px;
+  margin-top: 20px; 
+  transition-duration: 0.8s;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+}
+.project-details-count-percent-overlay{
+  width: 75%;
+  height: 100%;
+  background-color: green;
+  position: absolute;
+  top: 0;
+  left: -1000px;
+  border-radius: 20px;
+  transition-duration: 0.8s;  
+}
+.project-details-count-percent h3{
+  color: white;
+  z-index: 9;
+}
+.project-details-count-percent:hover .project-details-count-percent-overlay{
+  left: 0;
+}
+.project-details-donate-button{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.project-details-donate-button button{
+  width: 400px;
+  height: 50px;
+  background-color: orangered;
+  color: white;
+  font-family: var(--text-family);
+  font-weight: bold;
+  letter-spacing: 2px;
+  border: none;
+  cursor: pointer;
+}
+
 .shop-background-image{
   width: 100%;
   height: 70vh;
@@ -1431,55 +1610,68 @@ height: 100%;
   width: 100%;
   height: 100vh;
   display: flex;
-  justify-content: center;
-  margin: 0 auto;
+  align-items: center;
 }
 .base-partners-content {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
+}
+.base-partner-box {
+  width: 30%;
+  height: 200px;
+  background-color: white;
+  display: flex;
   align-items: center;
+  margin: 50px 0;
 }
 .base-partner{
-  width: 30%;
+  width: 100%;
+  height: 200px;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .base-partner img{
   width: 60%;
 }
 
-.brand-partners {
+
+.brand-partners-heading h1{
+  text-align: center;
+  font-family: var(--text-family);
+  letter-spacing: 2px;
+  margin-top: 50px;
+}
+.brand-partners{
   width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
 }
-
-.brand-partners-heading h1 {
-  color: var(--text-color);
-  font-family: var(--text-family);
-  letter-spacing: 2px;
-  text-align: center;
-}
-
 .brand-partners-content {
   width: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
-.brand-partners-box {
+.brand-partner-box {
   width: 30%;
   height: 200px;
   background-color: white;
-  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  margin: 50px 0;
+}
+.brand-partner{
+  width: 100%;
+  height: 200px;  
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.brand-partners-box img {
+.brand-partner img{
   width: 60%;
 }
 
@@ -1492,7 +1684,7 @@ height: 100%;
   top: 0;
   left: 0;
 }
-.donate{
+.projects{
   width: 100%;
   height: calc(80vh - 100px);
   background-image: url("https://www.globalgiving.org/img/banners/hero_give_lg.jpg");
@@ -1501,7 +1693,7 @@ height: 100%;
   background-size: cover;
   position: relative;
 }
-.donate-overlay{
+.projects-overlay{
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
@@ -1512,7 +1704,7 @@ height: 100%;
   justify-content: center;
   align-items: center;
 }
-.donate-overlay h1{
+.projects-overlay h1{
   font-family: var(--text-family);
   font-size: 50px;
   color: white;
@@ -1566,23 +1758,10 @@ color: var(--text-color);
 }
 .common-donate {
   width: 100%;
-  height: 100vh;
-  background-color: rgba(50, 50, 50, 0.8);
-  position: absolute;
-  top: 0;
-  left: 0;
+  padding: 30px;
   display: flex;
   align-items: center;
   padding-left: 220px;
-}
-
-.common-donate-remove {
-  color: white;
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  font-size: 40px;
-  cursor: pointer;
 }
 
 .common-donate-pay-items {
@@ -1628,17 +1807,18 @@ color: var(--text-color);
 }
 
 .common-donate-text p {
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 24px;
+  font-family: var(--text-family);
+  line-height: 30px;
   letter-spacing: 1px;
   font-size: 14px;
 }
 
 .common-donate-about {
-  width: 520px;
-  padding: 20px;
+  width: 40%;
+  padding: 10px;
   background-color: white;
   border-radius: 15px;
+  border: 1px solid gray;
 }
 
 .common-donate-image {
@@ -1656,6 +1836,11 @@ color: var(--text-color);
 .common-donate-items {
   width: 100%;
   display: flex;
+}
+.common-donate-pay-items{
+  width: 40%;
+  padding: 20px;
+  border: 1px solid gray;
 }
 
 .common-donate-pay h1 {
@@ -1824,17 +2009,6 @@ color: var(--text-color);
   filter: grayscale(100);
 }
 
-.object::after {
-  content: "Bu mağazadan əldə edilən xalis gəlirin 10%-i layihələrimizə gedir.";
-  position: absolute;
-  bottom: 20px;
-  left: 100px;
-  color: white;
-  font-family: CeraGr-bold, Helvetica, sans-serif;
-  font-size: 14px;
-  letter-spacing: 1px;
-}
-
 .object-content {
   width: 100%;
   text-align: center;
@@ -1861,8 +2035,330 @@ color: var(--text-color);
   font-weight: bold;
   transition-duration: 0.5s;
   cursor: pointer;
+  letter-spacing: 1px;
 }
 .object button:hover{
   background: none;
   border: 2px solid white;
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    border: 1px solid rgb(226, 226, 226);
+    border-left: transparent;
+    border-right: transparent;
+    border-top: transparent;
+  }
+  
+  .header-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .header-logo-icon {
+    display: flex;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .header-logo {
+    font-size: 35px;
+    color: green;
+  }
+  
+  .header-heading {
+    margin-left: 10px;
+    color: var(--text-color);
+    font-size: 20px;
+    margin-top: 5px;
+  }
+  
+  .header-menu {
+    margin: 10px;
+    display: none;
+  }
+  
+  .header-menu ul {
+    display: flex;
+  }
+  
+  .header-menu ul .li {
+    padding: 10px;
+    margin-left: 30px;
+    font-size: 17px;
+    font-family: CeraGR-bold, Helvetica, sans-serif;
+    font-weight: bold;
+    color: var(--text-color);
+    transition-duration: 0.5s;
+    border-radius: 30px;
+  }
+  .contain {
+    width: 100%;
+    height: 70vh;
+     background-image: url("https://images.unsplash.com/photo-1473605768212-7e1f2c756179?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+  }
+  .contain-background-image img{
+    width: 100%;
+    height: 100%; 
+  }
+  .contain-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .contain-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .contain-image {
+    margin-left: 100px;
+  }
+  
+  .contain-image img {
+    width: 100%;
+    transition-duration: 0.5s;
+    border-radius: 10px;
+  }
+  
+  .contain-heading h6 {
+    color: white;
+    font-family: CeraGR-bold, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 9;
+    font-size: 10px;
+  }
+  
+  .contain-heading h6::after {
+    content: "";
+    width: 60px;
+    height: 2px;
+    background-color: #f8a88b;
+    position: absolute;
+    top: 30px;
+    left: 0;
+  }
+  
+  .contain-heading button {
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: white;
+    color: var(--text-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 12px;
+  }
+  
+  .contain-heading button:hover {
+    background: none;
+    border: 2px solid white;
+    color: white;
+  }
+  
+  .contain-heading button i {
+    padding-left: 6px;    
+    font-size: 12px;
+    animation: arrowSpin 1s infinite alternate;
+    transition-duration: 0.5s;
+  }
+  
+  @keyframes arrowSpin {
+    from {
+      transform: translateX(0px);
+    }
+  
+    to {
+      transform: translateX(3px);
+    }
+  }
+  
+  .contain-heading h1 {
+    color: white;
+    font-size: 14px;
+    font-family: CeraGr-bold, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    z-index: 9;
+  }
+  
+  .contain-heading p {
+    color: white;
+    font-family: CeraGr-bold, Helvetica, sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    z-index: 9;
+  }
+  
+  .contain-heading a {
+    width: 200px;
+    height: 70px;
+    border: 2px solid var(--help-color);
+    background-color: var(--help-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    color: white;
+    font-weight: bold;
+    font-family: CeraGr-bold, Helvetica, sans-serif;
+    z-index: 9;
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  
+  .contain-heading a:hover {
+    background: white;
+    color: var(--main-color);
+    border: none;
+  }
+  
+  .contain-onedonate-text i {
+    color: green;
+    font-size: 20px;
+  }
+  
+  .contain-onedonate-text h4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    line-height: 24px;
+  }
+  
+  .contain-onedonate-text span {
+    font-size: 15px;
+    padding-left: 10px;
+    color: green;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+  }
+  
+  .contain-onedonate-text p {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 24px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    display: none;  
+  }
+  
+  .contain-onedonate-about {
+    width: 300px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 15px;
+  }
+  
+  .contain-onedonate-image {
+    width: 100%;
+    height: 50%;
+  }
+  
+  .contain-onedonate-image img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .contain-onedonate-button {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    border: none;
+  }
+  
+  .contain-onedonate-button button {
+    width: 80%;
+    height: 30px;
+    background-color: var(--help-color);
+    border: none;
+    color: white;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .contain-onedonate-button button:hover {
+    background-color: rgb(0, 0, 100);
+  }
+  .title{
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+  }
+  .title-heading{
+    text-align: center;
+  }
+  .title-heading h5{
+    font-family: var(--text-family);
+    margin-bottom: 20px;
+  }
+  .title-heading h2{
+    font-family: var(--text-family);
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  .title-heading span{
+    font-family: var(--text-family);
+    line-height: 24px;
+    font-size: 11px;
+  }
+  .title-button{
+   display: flex;
+   justify-content: center;
+  margin-top: 20px;
+  }
+  .title-button button{
+    width: 150px;
+    height: 40px;
+    background-color: var(--help-color);
+    border: none;
+    color: white;
+    font-family: var(--text-family);
+    transition-duration: 0.5s;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .title-button button:hover{
+    border: 2px solid var(--help-color) ;
+    background: none;
+    color: var(--help-color);
+  }
+  
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+@media screen and (min-width: 1024px) {
+
 }

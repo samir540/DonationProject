@@ -16,28 +16,28 @@ function Home() {
   });
   return (
     <section>
-      <div className="contain">
+      <div data-aos="fade-up" className="contain">
         <div className="contain-overlay"></div>
         <div className="container">
           <div className="contain-content">
             <div className="contain-items">
               <div className="contain-heading">
-                <h6>BİZİM XEYİRLİYƏ YANAŞIMIMIZ SADƏDIR</h6>
-                <h1>
+                <h6 data-aos="fade-right">BİZİM XEYİRLİYƏ YANAŞIMIMIZ SADƏDIR</h6>
+                <h1 data-aos="fade-right">
                   Afrikaya Davamlı Layihələrlə <br /> Dəstək.
                 </h1>
-                <p>
+                <p data-aos="fade-right">
                   Afrika ağır vəziyyətdədir və bir çoxları iqtisadi <br />{" "}
                   mübarizələr səbəbindən ailələrini dolandıra bilmirlər.
                 </p>
-                <button onClick={() => (window.location = "/projects")}>
+                <button data-aos="fade-right" onClick={() => (window.location = "/projects")}>
                   Sosyal Layihələr<i className="fa-solid fa-arrow-right"></i>
                 </button>
               </div>
             </div>
-            <div className="contain-onedonate-about">
-              <div className="contain-onedonate-image">
-                <img
+            <div data-aos="fade-left" className="contain-onedonate-about">
+              <div  className="contain-onedonate-image">
+                <img 
                   src="https://ucarecdn.com/61879270-f970-423e-8f53-57c0d8ece6bd/-/resize/940x/-/format/auto/"
                   alt=""
                 />
@@ -62,7 +62,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="title">
+      <div data-aos="fade-up" className="title">
         <div className="container">
           <div className="title-heading">
             <h5>BİZİM İŞİMİZ</h5>
@@ -81,19 +81,30 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="hero">
+      <div data-aos="fade-up" className="hero">
         <div className="hero-content">
           {stories && stories.map((a) => <DonateStory key={a.id} story={a} />)}
         </div>
       </div>
-
-      <div className="head">
+      <div className="object">
+        <div className="container">
+          <div className="object-content">
+            <h1 data-aos="fade-up">
+              Hər kəsə kömək edə bilmərik, amma hamı kiməsə kömək edə bilər{" "}
+            </h1>
+            <button data-aos="fade-up" onClick={() => (window.location = "/commondonate")}>
+              İanə Et
+            </button>
+          </div>
+        </div>
+      </div>
+      <div data-aos="fade-up" className="head">
         <div className="head-content">
           {projects &&
             projects.map((a) => <DonateProjects key={a.id} project={a} />)}
         </div>
       </div>
-      <div className="common">
+      <div data-aos="fade-up" className="common">
         <div className="container">
           <div className="common-content">
             <div className="common-heading">
@@ -104,7 +115,7 @@ function Home() {
                 şeydir.
               </p>
             </div>
-            <div className="common-partners">
+            <div  className="common-partners">
               {basepartners &&
                 basepartners.map((a) => <BasePartner key={a.id} partner={a} />)}
             </div>
@@ -116,17 +127,15 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="object">
-        <div className="container">
-          <div className="object-content">
-            <h1>
-              Hər kəsə kömək edə bilmərik, amma hamı kiməsə kömək edə bilər{" "}
-            </h1>
-            <button onClick={() => (window.location = "/donate")}>
-              İanə Et
-            </button>
-          </div>
-        </div>
+      <div className="base">
+<div className="base-content">
+<div className="base-title">
+<h1 data-aos="fade-up">Hər aldığınız kitabda bizə köməklik edirsiniz</h1>
+</div>
+<div data-aos="fade-up" className="base-button">
+  <button onClick={()=>window.location="/shop"}>Mağazaya get</button>
+</div>
+</div>
       </div>
       <Footer />
     </section>

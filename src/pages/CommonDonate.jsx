@@ -1,17 +1,16 @@
 import React from "react";
-function CommonDonate({ setmodalDonate }) {
+import Footer from "../Companents/Footer/Footer";
+function CommonDonate() {
   return (
-    <div className="common-donate">
-      <div className="common-donate-remove">
-        <i
-          onClick={() => setmodalDonate(false)}
-          className="fa-solid fa-xmark"
-        ></i>
-      </div>
+    <section>
+      <div className="common-donate">
+        <div className="common-donate-heading">
+          <h1></h1>
+        </div>
       <div className="common-donate-content">
         <div className="container">
           <div className="common-donate-items">
-            <div className="common-donate-about">
+            <div data-aos="fade-right" className="common-donate-about">
               <div className="common-donate-image">
                 <img
                   src="https://ucarecdn.com/61879270-f970-423e-8f53-57c0d8ece6bd/-/resize/940x/-/format/auto/"
@@ -30,7 +29,7 @@ function CommonDonate({ setmodalDonate }) {
                 </p>
               </div>
             </div>
-            <div className="common-donate-pay-items">
+            <div data-aos="fade-left" className="common-donate-pay-items">
               <div className="common-donate-pay">
                 <h1>İANƏ ET</h1>
                 <p>
@@ -82,6 +81,8 @@ function CommonDonate({ setmodalDonate }) {
         </div>
       </div>
     </div>
+    <Footer/>
+      </section>
   );
 }
 

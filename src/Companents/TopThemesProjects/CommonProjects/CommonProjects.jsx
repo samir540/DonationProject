@@ -25,7 +25,7 @@ function CommonProjects() {
                     <div className="common-project-box-content">
                         <h4>{data.firstImageTitle}</h4>
                         <p>{data.firstImageText}</p>
-                        <button>Donate</button>
+                        <button onClick={()=>window.location=`/commondetailsproject/${data.id}`}>Donate</button>
                     </div>
                     </div>
                     <div className="common-project-box">
@@ -35,7 +35,7 @@ function CommonProjects() {
                     <div className="common-project-box-content">
                         <h4>{data.secondImageTitle}</h4>
                         <p>{data.secondImageText}</p>
-                        <button>Donate</button>
+                        <button onClick={()=>window.location=`/commondetailsproject/${data.id}`}>Donate</button>
                     </div>
                     </div>
                     <div className="common-project-box">
@@ -45,7 +45,7 @@ function CommonProjects() {
                     <div className="common-project-box-content">
                         <h4>{data.thirdImageTitle}</h4>
                         <p>{data.thirdImageText}</p>
-                        <button>Donate</button>
+                        <button onClick={()=>window.location=`/commondetailsproject/${data.id}`}>Donate</button>
                     </div>
                     </div>
                     <div className="common-project-box">
@@ -55,7 +55,7 @@ function CommonProjects() {
                     <div className="common-project-box-content">
                         <h4>{data.fourthImageTitle}</h4>
                         <p>{data.fourthImageText}</p>
-                        <button>Donate</button>
+                        <button onClick={()=>window.location=`/commondetailsproject/${data.id}`}>Donate</button>
                     </div>
                     </div>
                     <div className="common-project-box">
@@ -65,7 +65,7 @@ function CommonProjects() {
                     <div className="common-project-box-content">
                         <h4>{data.fifthImageTitle}</h4>
                         <p>{data.fifthImageText}</p>
-                        <button>Donate</button>
+                        <button onClick={()=>window.location=`/commondetailsproject/${data.id}`}>Donate</button>
                     </div>
                     </div>
                     <div className="common-project-box">
@@ -75,7 +75,7 @@ function CommonProjects() {
                     <div className="common-project-box-content">
                         <h4>{data.sixthImageTitle}</h4>
                         <p>{data.sixthImageText}</p>
-                        <button>Donate</button>
+                        <button onClick={()=>window.location=`/commondetailsproject/${data.id}`}>Donate</button>
                     </div>
                     </div>
                     <div className="common-project-box">
@@ -85,7 +85,7 @@ function CommonProjects() {
                     <div className="common-project-box-content">
                         <h4>{data.seventhImageTitle}</h4>
                         <p>{data.seventhImageText}</p>
-                        <button>Donate</button>
+                        <button onClick={()=>window.location=`/commondetailsproject/${data.id}`}>Donate</button>
                     </div>
                     </div>
                     <div className="common-project-box">
@@ -95,7 +95,7 @@ function CommonProjects() {
                     <div className="common-project-box-content">
                         <h4>{data.eighthImageTitle}</h4>
                         <p>{data.eighthImageText}</p>
-                        <button>Donate</button>
+                        <button onClick={()=>window.location=`/commondetailsproject/${data.id}`}>Donate</button>
                     </div>
                     </div>
                     <div className="common-project-box">
@@ -105,7 +105,7 @@ function CommonProjects() {
                     <div className="common-project-box-content">
                         <h4>{data.ninthImageTitle}</h4>
                         <p>{data.ninthImageText}</p>
-                        <button>Donate</button>
+                        <button onClick={()=>window.location=`/commondetailsproject/${data.id}`}>Donate</button>
                     </div>
                     </div>
                     <div className="common-project-box">
@@ -115,7 +115,7 @@ function CommonProjects() {
                     <div className="common-project-box-content">
                         <h4>{data.tenthImageTitle}</h4>
                         <p>{data.tenthImageText}</p>
-                        <button>Donate</button>
+                        <button onClick={()=>window.location=`/commondetailsproject/${data.id}`}>Donate</button>
                     </div>
                     </div>
                 </div>

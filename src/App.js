@@ -16,7 +16,9 @@ import OurStories from './Companents/DonateStory/DonateStoryDetails/OurStories/O
 import OurStoryDetails from './Companents/DonateStory/DonateStoryDetails/OurStories/OurStory/OurStoryDetails';
 import CommonProjects from './Companents/TopThemesProjects/CommonProjects/CommonProjects';
 import AddToBasket from './Companents/AddToBasket/AddToBasket';
-import ProductDetails from './Companents/Product/ProductDetails';
+import CommonDonate from './pages/CommonDonate';
+import ProjectDetailsDonate from './Companents/DonateProjects/ProjectDetails/ProjectDetailsDonate'
+import CommonProjectsDetails from './Companents/TopThemesProjects/CommonProjects/CommonProjectsDetails';
 function App() {
   return (
     <div>
@@ -28,9 +30,10 @@ function App() {
           <Route path='/register' element={<Register />} />
           <Route path='/about' element={<About />} />
           <Route path='/projects' element={<Projects />} />
-          <Route path='/donate' element={<Donate />} />
+          <Route path='/shop' element={<Donate />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/partners' element={<Partners />} />
+          <Route path='/commondonate' element={<CommonDonate />} />
           <Route path='/projectdetails/:id' element={<ProjectDetails/>}/>
           <Route path='/donatestorydetails/:id' element={<DonateStoryDetails/>}/>
           <Route path='/smartvillage' element={<SmartVillage/>}/>
@@ -39,6 +42,8 @@ function App() {
           <Route path='/commonprojects/:id' element={<CommonProjects/>}/>
           <Route path='/addtobasket' element={<AddToBasket/>}/>
           <Route path='/productdetails' element={<ProjectDetails/>}/>
+          <Route path='/projectdetailsdonate/:id' element={<ProjectDetailsDonate />} />
+          <Route path='/commondetailsproject/:id' element={<CommonProjectsDetails/>}/>
         </Routes>
       </Router>
     </div>

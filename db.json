@@ -286,25 +286,41 @@
       "id": 1,
       "name": "KENYA",
       "title": "Su Böhranına Yardım Fondu",
-      "image": "https://images.unsplash.com/photo-1520254553641-2eed4cf2ef26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTh8fGtlbnlhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+      "image": "https://images.unsplash.com/photo-1520254553641-2eed4cf2ef26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1930&q=80",
+      "content": "Məzmun",
+      "text": "Su həyatın bütün sahələrini birləşdirir. Təhlükəsiz su və kanalizasiyaya çıxış problemləri tez bir zamanda potensiala çevirə bilər - insanlara məktəb və iş üçün vaxt ayırmaq və bütün dünyada qadınlar, uşaqlar və ailələrin sağlamlığının yaxşılaşdırılmasına töhfə vermək.",
+      "amount": "1,275,000",
+      "percent": "43"
     },
     {
       "id": 2,
       "name": "SOMALI",
       "title": "Şərqi Afrika Aclığa Yardım Fondu",
-      "image": "https://files.globalgiving.org/pfil/56253/pict_featured.jpg?m=1654802957000"
+      "image": "https://files.globalgiving.org/pfil/56253/pict_featured.jpg?m=1654802957000",
+      "content": "Məzmun",
+      "text": "Qlobal aclıq artır. 50 milyondan çox insan aclıqla üz-üzədir. Şərqi Afrika son 40 ilin ən pis quraqlığını yaşayır.Biz bu aclıq böhranına qarşı güclərini birləşdirən  xeyriyyə təşkilatlarından biriyik. Bugünkü ianəniz ehtiyacı olanlara təcili yardım göstərəcək.",
+      "amount": "3,650,000" ,
+      "percent": "64"
     },
     {
       "id": 3,
       "name": "KONGO",
-      "title": "Virusa qarşı Yardım Fondu Fondu",
-      "image": "https://files.globalgiving.org/pfil/53411/pict_featured.jpg?m=1654804688000"
+      "title": "Virusa qarşı Yardım Fondu",
+      "image": "https://files.globalgiving.org/pfil/53411/pict_large.jpg?m=1629127124000",
+      "content": "Məzmun",
+      "text": "Kongo minlərlə dinc sakin həlak olub, yüz minlərlə insan evlərini tərk etmək məcburiyyətində qalıb.Həyat Fondu Kongodakı insanlara və ölkədən qaçanlara təcili yardım almaq üçün yerdəki tərəfdaşlarımızla sıx əməkdaşlıq edir. İanəniz regionda işləyən yoxlanılmış qeyri-kommersiya təşkilatlarına, eləcə də əfqan qaçqınlarına kömək etmək üçün çalışanlara gedəcək."      ,
+      "amount": "2,825,000",
+      "percent": "75"
     },
     {
       "id": 4,
       "name": "SUDAN",
       "title": "Böhran Fonduna ümid",
-      "image": "https://images.unsplash.com/photo-1473594659356-a404044aa2c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YWZyaWNhJTIwbW90aGVyJTIwY2hpbGRyZW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+      "image": "https://images.unsplash.com/photo-1473594659356-a404044aa2c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YWZyaWNhJTIwbW90aGVyJTIwY2hpbGRyZW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      "content": "Məzmun",
+      "text": "Dünyada milyonlarla insan böhranlar yaşayır, lakin onların hekayələri nadir hallarda əsas xəbərlərdə eşidilir və ya qlobal məlumatlılığa çatdırılır. Böhranda Həyat Fondu silahlı münaqişələr, aclıq, təqiblər və iqlim fəlakətləri də daxil olmaqla təbii və insan mənşəli fəlakətləri intensivləşdirməklə mübarizə aparan icmalara kömək edəcək.",
+      "amount": "4,790,000",
+      "percent": "82"
     }
   ],
   "TopThemesProjects": [
@@ -586,5 +602,31 @@
       "id": 6,
       "image": "https://www.onedrop.org/image/1/435/0/uploads/rich-content/gac_en_web-en-1592509773.png"
     }
+  ],
+  "brandPartners": [
+  {
+    "id": 1,
+    "image": "https://www.onedrop.org/image/1/385/0/uploads/rich-content/1d-logos-audemarspiguet-en-1551474159.png"
+  },
+  {
+    "id": 2,
+    "image": "https://www.onedrop.org/image/1/385/0/uploads/rich-content/1d-logos-valmont-2-en-1551474508.png"
+  },
+  {
+    "id": 3,
+    "image": "https://www.onedrop.org/image/1/385/0/uploads/rich-content/1d-logos-richardmille-en-1551474065.png"
+  },
+  {
+    "id": 4,
+    "image": "https://www.onedrop.org/image/1/385/0/uploads/rich-content/1d-logos-mclaren-en-1551474078.png"
+  },
+  {
+    "id": 5,
+    "image": "https://www.onedrop.org/image/1/385/0/uploads/rich-content/1d-logos-sevan-bicakci-en-1551475391.png"
+  },
+  {
+    "id": 6,
+    "image": "https://www.onedrop.org/image/1/435/0/uploads/rich-content/guustologo-horizontal-9-en-1648825438.png"
+  }
   ]
 }

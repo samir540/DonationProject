@@ -1,6 +1,7 @@
 import React from "react";
 import { servicesApi } from "../../../Service/apiService";
 import { useParams } from "react-router-dom";
+import Footer from '../../../Companents/Footer/Footer'
 function ProjectDetails() {
   let { id } = useParams();
   const {
@@ -12,12 +13,46 @@ function ProjectDetails() {
   return (
     <section>
       {project && (
-        <div>
+          <div className="project-details">
+        <div className="container">
+          <div className="project-details-heading">
+        <h1>{project.name} {project.title}</h1>
+        <h3>Həyat Fondu ilə</h3>
+          </div>
+        <div className="project-details-items">
+          <div className="project-details-item">
+          <div className="project-details-image">
           <img src={project.image} alt="" />
-          <h3>{project.name}</h3>
-          <h4>{project.title}</h4>
+          </div>
+          <div className="project-details-content">
+            <h1>{project.content}</h1>
+            <p>{project.text}</p>
+          </div>
+          </div>
+          <div className="project-details-donate">
+          <div className="project-details-amount">
+         <div className="project-details-amount-overlay"></div>
+          <div className="project-details-count">
+              <div className="project-details-count-goal">
+                <h3>Məqsəd: {project.amount} $ </h3>
+              </div>
+            <div className="project-details-count-percent">
+            <h3>{project.percent} %</h3>
+
+           <div className="project-details-count-percent-overlay">
+           </div>
+               </div>
+            </div>
+          </div>
+          <div className="project-details-donate-button">
+            <button onClick={()=>window.location=`/projectdetailsdonate/${project.id}`}>İndi İanə Et</button>
+          </div>
+          </div>
+        </div>
+        </div>
         </div>
       )}
+      <Footer/>
     </section>
   );
 }

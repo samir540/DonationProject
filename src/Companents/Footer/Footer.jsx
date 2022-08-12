@@ -4,26 +4,26 @@ import {NavLink} from 'react-router-dom'
 import {useState} from 'react'
 function Footer() {
   return (
-    <footer>
+    <footer data-aos="fade-up">
     <div className="footer-overlay"></div>
                 <div className="container">
                     <div className="footer-content">
                     <NavLink to='/' className="footer-icon">
-            <div className="footer-logo">
+            <div data-aos="fade-right" className="footer-logo">
             <i className="fa-brands fa-pagelines"></i>
             </div>
-            <div className="footer-heading">
+            <div data-aos="fade-right" className="footer-heading">
               <h3>Həyat Fondu</h3>
             </div>
           </NavLink>
-                        <div className="footer-items">
+                        <div data-aos="fade-right" className="footer-items">
                             <h5>Xəbər Bülleteni</h5>
                             <input type="text" name="" id="" placeholder='Adınızı daxil edin' /> <br />
                             <input type="text" name="" id="" placeholder='Soyadınızı daxil edin' /> <br />                           
                             <input type="text" name="" id="" placeholder='E-poçt ünvanınızı daxil edin' /> <br />
                             <button>Bülletenimizə abunə olun</button>
                         </div>
-                        <div className="footer-contact">
+                        <div data-aos="fade-left" className="footer-contact">
                             <div className="contact-us">
                                 <h5>BİZİMLƏ ƏLAQƏ</h5>
                                 <p>info@həyatfondu.org</p>
@@ -39,7 +39,7 @@ function Footer() {
                                 <a href="https://www.facebook.com/" target='_blank'><i className="fa-brands fa-facebook-square"></i></a>
                             </div>
                         </div>
-                        <div className="footer-resource">
+                        <div data-aos="fade-left" className="footer-resource">
                             <div className="resource-items">
                                 <h5>Bağlantılar</h5>
                                 <a href="/about">Haqqımızda</a>

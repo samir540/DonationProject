@@ -13,6 +13,11 @@ export const servicesApi = createApi({
         url: `/TopThemesProjects/${id}`,
       }),
     }),
+    getTopThemesProject: builder.query({
+      query: (id) => ({
+        url: `/TopThemesProjects/${id}`,
+      }),
+    }),
     getProjects: builder.query({
       query: () => ({
         url: `/donateProjects`,
@@ -61,6 +66,11 @@ export const servicesApi = createApi({
     getBasePartners: builder.query({
       query: () => ({
         url: "/basePartners",
+      }),
+    }),
+    getBrandPartners: builder.query({
+      query: () => ({
+        url: "/brandPartners",
       }),
     }),
     getStoryContents: builder.query({

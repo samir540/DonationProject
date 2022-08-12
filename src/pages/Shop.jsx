@@ -2,6 +2,7 @@ import React from "react";
 import { servicesApi } from "../Service/apiService";
 import Product from "../Companents/Product/Product";
 import { useState } from "react";
+import Footer from "../Companents/Footer/Footer";
 function Donate() {
   let [basket, setBasket] = useState([]);
   const { data: products } = servicesApi.useGetProductsQuery();
@@ -27,10 +28,10 @@ function Donate() {
   };
   return (
     <section>
-      <div className="shop-background-image">
+      <div data-aos="fade-up" className="shop-background-image">
         <div className="shop-background-image-overlay"></div>
       </div>
-      <div className="products">
+      <div data-aos="fade-up" className="products">
         {products &&
           products.map((a) => (
             <Product
@@ -42,6 +43,7 @@ function Donate() {
             />
           ))}
       </div>
+      <Footer/>
     </section>
   );
 }
